@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Dogs</title>
+    <link rel="stylesheet" href="m.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a><img src="A_modern_and_sleek_circular_logo_for_a_company_named_pethelp_with_dark_blue_and_dark_orange_colors__without_background_and_company_name-removebg-preview.png" class="Logo"><h3>PetsHelp</h3></a></li>
+            <li>
+                <a href="#">
+                    <input type="text" id="searchInput" placeholder="Search..." onkeyup="filterDivs()">
+                </a>
+            </li>
+            <li class="hideOnmobile"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M480-120v-80h280v-560H480v-80h280q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H480Zm-80-160-55-58 102-102H120v-80h327L345-622l55-58 200 200-200 200Z"/></svg><svg xmlns="http://www.w3.org/2000/svg" height="6px" viewBox="0 -960 960 960" width="6px" fill="#00008b"><path d="M360-160q-33 0-56.5-23.5T280-240q0-33 23.5-56.5T360-320q33 0 56.5 23.5T440-240q0 33-23.5 56.5T360-160Zm240 0q-33 0-56.5-23.5T520-240q0-33 23.5-56.5T600-320q33 0 56.5 23.5T680-240q0 33-23.5 56.5T600-160ZM360-400q-33 0-56.5-23.5T280-480q0-33 23.5-56.5T360-560q33 0 56.5 23.5T440-480q0 33-23.5 56.5T360-400Zm240 0q-33 0-56.5-23.5T520-480q0-33 23.5-56.5T600-560q33 0 56.5 23.5T680-480q0 33-23.5 56.5T600-400ZM360-640q-33 0-56.5-23.5T280-720q0-33 23.5-56.5T360-800q33 0 56.5 23.5T440-720q0 33-23.5 56.5T360-640Zm240 0q-33 0-56.5-23.5T520-720q0-33 23.5-56.5T600-800q33 0 56.5 23.5T680-720q0 33-23.5 56.5T600-640Z"/></svg><h4>Favorites</h4></a></li>
+            <Li><a><h4>Settings</h4></a></Li>
+        </ul>
+    </nav>
+    <div class="small-container">
+        <div class="row">
+            <h2 id="resultsHeading">All Dog</h2>
+            <select id="sortSelect" onchange="sortDivs()">
+                <option>All</option>
+                <option>Short by A-Z</option>
+                <option>Short by Z-A</option>
+                <option>Short by rating </option>
+                <option>Short by size </option>
+            </select>
+        </div>
+         <!-- Container for the divs -->
+        <div id="container">
+            <div class="randomDiv">
+             <a href="Affenpinscher.html"> <img src="https://www.bing.com/th?id=OIP.ftTQ8BSLssoe3KAtKuNxLgHaEx&w=157&h=101&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" width="400px" height="250px">
+                <h4>Affenpinscher</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div></a>
+                <p class="size">small</p>
+            </div>
+            <div class="randomDiv">
+                <img src="https://www.bing.com/th?id=OIP.rPXgs-eFAupO3s9_If2PkQHaE7&w=138&h=100&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" width="400px" height="250px">
+                <h4>Airedale Terrier</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p class="size">large</p>
+            </div>
+            <div class="randomDiv">
+                <img src="https://th.bing.com/th/id/OIP.U860Pl54FpreTWsT5dBVYwHaFI?w=281&h=195&c=7&r=0&o=5&pid=1.7" width="400px" height="250px">
+                <h4>Alaskan Malamute</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p class="size">large</p>
+            </div>
+            <div class="randomDiv">
+                <img src="https://th.bing.com/th/id/OIP.YCigrAv0VRZLLCzK3Jdb_AHaF7?w=197&h=180&c=7&r=0&o=5&pid=1.7" width="400px" height="250px">
+                <h4>Australian Cattle Dog</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p class="size">medium</p>
+            </div>
+     </div>
+    </div>
+    <script>
+        // Function to randomize divs
+        function randomizeDivs() {
+            const container = document.getElementById("container");
+            const divs = Array.from(container.children);
+    
+            for (let i = divs.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [divs[i], divs[j]] = [divs[j], divs[i]]; // Swap elements
+            }
+    
+            container.innerHTML = "";
+            divs.forEach(div => container.appendChild(div));
+        }
+    
+        // Function to filter divs based on search input
+        function filterDivs() {
+            const searchInput = document.getElementById("searchInput").value.toLowerCase();
+            const divs = document.querySelectorAll(".randomDiv");
+    
+            let found = false;
+    
+            divs.forEach(div => {
+                const size = div.querySelector(".size") ? div.querySelector(".size").textContent.toLowerCase() : "";
+                
+                // Check if the size includes the search input
+                if (size.includes(searchInput) || div.querySelector("h4").textContent.toLowerCase().includes(searchInput)) {
+                    div.style.display = "block";
+                    found = true;
+                } else {
+                    div.style.display = "none";
+                }
+            });
+    
+            const resultsHeading = document.getElementById("resultsHeading");
+    
+            if (searchInput && !found) {
+                resultsHeading.textContent = "No Results Found";
+            } else if (searchInput) {
+                resultsHeading.textContent = "Results";
+            } else {
+                resultsHeading.textContent = "All Dog"; // Reset to original title when search is empty
+            }
+        }
+        function sortDivs() {
+    const container = document.getElementById("container");
+    const divs = Array.from(container.children);
+    const sortSelect = document.getElementById("sortSelect");
+    const selectedOption = sortSelect.value;
+
+    if (selectedOption === "Short by A-Z") {
+        divs.sort((a, b) => {
+            const nameA = a.querySelector("h4").textContent.toUpperCase();
+            const nameB = b.querySelector("h4").textContent.toUpperCase();
+            return nameA < nameB ? -1 : nameA > nameB ? 1 : 0;
+        });
+    } else if (selectedOption === "Short by Z-A") {
+        divs.sort((a, b) => {
+            const nameA = a.querySelector("h4").textContent.toUpperCase();
+            const nameB = b.querySelector("h4").textContent.toUpperCase();
+            return nameA < nameB ? 1 : nameA > nameB ? -1 : 0;
+        });
+    } else if (selectedOption === "Short by rating") {
+        divs.sort((a, b) => {
+            const ratingA = a.querySelectorAll(".fa-star").length;
+            const ratingB = b.querySelectorAll(".fa-star").length;
+            return ratingB - ratingA; // Sort by descending order of stars
+        });
+    }
+
+    // Reappend sorted divs back into the container
+    divs.forEach(div => container.appendChild(div));
+}   
+        // Run the randomizeDivs function when the page is loaded
+        window.onload = randomizeDivs;
+    </script>
+</body>
+</html>
