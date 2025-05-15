@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dog Breeds Menu</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen p-6">
+
+  <div class="max-w-5xl mx-auto">
+    <h1 class="text-3xl font-bold mb-6 text-center">Dog Breeds Menu</h1>
+
+    <div class="flex flex-col sm:flex-row gap-4 mb-6">
+      <input id="searchInput" type="text" placeholder="Search breed or origin..." 
+             class="flex-grow p-2 border rounded shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500" />
+      <select id="sizeFilter" class="p-2 border rounded shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 w-48">
+        <option value="">Filter by size</option>
+        <option value="Tiny">Tiny</option>
+        <option value="Small">Small</option>
+        <option value="Medium">Medium</option>
+        <option value="Medium–Large">Medium–Large</option>
+        <option value="Large">Large</option>
+        <option value="Large–Giant">Large–Giant</option>
+        <option value="Giant">Giant</option>
+      </select>
+    </div>
+
+    <div id="dogList" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6"></div>
+  </div>
+
+  <!-- Popup modal -->
+  <div id="popup" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50">
+    <div class="bg-white rounded-lg shadow-lg max-w-lg w-full p-6 relative">
+      <button id="popupClose" class="absolute top-3 right-3 text-gray-600 hover:text-gray-900 text-xl font-bold">&times;</button>
+      <h2 id="popupBreed" class="text-2xl font-semibold mb-3"></h2>
+      <p><strong>Origin:</strong> <span id="popupOrigin"></span></p>
+      <p><strong>Size:</strong> <span id="popupSize"></span></p>
+      <p><strong>Care Rating:</strong> <span id="popupCareRating"></span></p>
+      <p class="mt-3"><strong>Feeding Habits:</strong></p>
+      <p id="popupFeeding" class="mb-3"></p>
+      <p><strong>Grooming Needs:</strong></p>
+      <p id="popupGrooming"></p>
+    </div>
+  </div>
+
+  <script>
+    
+    const dogListEl = document.getElementById('dog-list');
+const searchInput = document.getElementById('search-input');  // your search box
+const sizeFilter = document.getElementById('size-filter');    // your size dropdown/filter
+
+let dogs = [];  // will hold the full dog list after fetching
+
+// Normalize size to a common format (example: "small" instead of "Small" or "SMALL")
+function normalizeSize(size) {
+  return size.toLowerCase();
+}
+
+async function fetchDogs() {
+  try {
+    const res = await fetch('dog.json');
+    if (!res.ok) throw new Error('Failed to load dog.json');
+    dogs = await res.json();
+  } catch (error) {
+    console.error('Error fetching dog.json:', error);
+    dogs = [];
+  }
+}
+
+// Provided function - fetch image for a dog breed
+async function fetchDogImage(breed) {
+  const apiBreed = breed.toLowerCase().replace(/ /g, '-').replace(/_/g, '-');
+  console.log(apiBreed)
+  const url = `https://dog.ceo/api/breed/${apiBreed}/images/random`;
+
+  try {
+    const res = await fetch(url);
+    if (!res.ok) throw new Error('Image fetch failed');
+    const data = await res.json();
+    if (data.status === 'success') {
+      return data.message; // image URL
+    }
+  } catch {
+    return 'https://via.placeholder.com/150?text=No+Image';
+  }
+}
+
+// Provided function - create card with dog details + image
+async function createDogCard(dog) {
+  const card = document.createElement('div');
+  card.className = "bg-white rounded shadow p-4 cursor-pointer hover:shadow-lg transition";
+  card.tabIndex = 0;
+  card.setAttribute('role', 'button');
+  card.setAttribute('aria-label', `More info about ${dog.breed}`);
+
+  const imageUrl = await fetchDogImage(dog.breed);
+
+  card.innerHTML = `
+    <img src="${imageUrl}" alt="${dog.breed} image" class="w-full h-40 object-cover rounded mb-2" />
+    <h3 class="text-xl font-semibold capitalize mb-1">${dog.breed.replace(/-/g, ' ')}</h3>
+    <p><strong>Origin:</strong> ${dog.origin}</p>
+    <p><strong>Size:</strong> ${dog.size}</p>
+    <p><strong>Care Rating:</strong> ${dog.careRating}</p>
+  `;
+
+  card.addEventListener('click', () => openPopup(dog));
+  card.addEventListener('keypress', e => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      openPopup(dog);
+      e.preventDefault();
+    }
+  });
+
+  return card;
+}
+
+// Provided function - render array of dog cards
+async function renderDogList(dogArray) {
+  dogListEl.innerHTML = '';
+  if (dogArray.length === 0) {
+    dogListEl.innerHTML = `<p class="text-center col-span-full text-gray-500">No dogs found.</p>`;
+    return;
+  }
+
+  const cards = await Promise.all(dogArray.map(dog => createDogCard(dog)));
+  cards.forEach(card => dogListEl.appendChild(card));
+}
+
+// Provided function - filter dog list and render results
+async function filterAndRender() {
+  const searchTerm = searchInput.value.trim().toLowerCase();
+  const sizeTerm = sizeFilter.value;
+
+  const filtered = dogs.filter(dog => {
+    const breed = dog.breed.toLowerCase();
+    const origin = dog.origin.toLowerCase();
+    const size = normalizeSize(dog.size);
+
+    const matchesSearch = breed.includes(searchTerm) || origin.includes(searchTerm);
+    const matchesSize = sizeTerm === '' || size === sizeTerm;
+
+    return matchesSearch && matchesSize;
+  });
+
+  await renderDogList(filtered);
+}
+
+// Initialize app: fetch dogs, render all, and setup event listeners
+async function init() {
+  await fetchDogs();
+  await renderDogList(dogs);
+
+  searchInput.addEventListener('input', filterAndRender);
+  sizeFilter.addEventListener('change', filterAndRender);
+}
+
+// Dummy popup function for demo (replace with real implementation)
+function openPopup(dog) {
+  alert(`More info about ${dog.breed}`);
+}
+
+// Start app
+init();
+
+
+  </script>
+</body>
+</html>

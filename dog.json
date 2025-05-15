@@ -1,0 +1,493 @@
+[
+  {
+    "breed": "akita",
+    "origin": "Japan",
+    "feedingHabits": "High-protein, high-fat diet. Feed twice a day.",
+    "groomingNeeds": "Moderate. Heavy shedding, especially seasonally. Regular brushing required.",
+    "size": "Large (100–130 lbs)",
+    "careRating": "3/5"
+  },
+  {
+    "breed": "malamute",
+    "origin": "Alaska",
+    "feedingHabits": "High-protein, high-fat diet. Controlled feeding to avoid obesity.",
+    "groomingNeeds": "High. Thick coat, sheds heavily twice a year. Frequent brushing needed.",
+    "size": "Large (75–100 lbs)",
+    "careRating": "2/5"
+  },
+  {
+    "breed": "American Pit Bull Terrier",
+    "origin": "United States",
+    "feedingHabits": "High-protein diet with moderate fat. Regular meals required.",
+    "groomingNeeds": "Low. Short coat. Minimal brushing, regular baths and ear cleaning needed.",
+    "size": "Medium (30–60 lbs)",
+    "careRating": "4/5"
+  },
+  {
+    "breed": "Basset Hound",
+    "origin": "France/Belgium",
+    "feedingHabits": "Balanced diet rich in protein, low in fat. Controlled portions.",
+    "groomingNeeds": "Moderate. Weekly brushing and regular ear cleaning.",
+    "size": "Medium (40–60 lbs)",
+    "careRating": "3/5"
+  },
+  {
+    "breed": "Boxer",
+    "origin": "Germany",
+    "feedingHabits": "High-protein, high-fat. Balanced, controlled portions to prevent obesity.",
+    "groomingNeeds": "Low. Short coat. Minimal brushing, regular baths.",
+    "size": "Medium–Large (50–70 lbs)",
+    "careRating": "5/5"
+  },
+  {
+    "breed": "Chihuahua",
+    "origin": "Mexico",
+    "feedingHabits": "High-quality, small-bite diet. Frequent small meals.",
+    "groomingNeeds": "Low to moderate. Short-haired needs occasional brushing; long-haired needs more care.",
+    "size": "Tiny (2–6 lbs)",
+    "careRating": "4/5"
+  },
+  {
+    "breed": "Cocker Spaniel",
+    "origin": "United Kingdom",
+    "feedingHabits": "Balanced diet with moderate protein and fat. Portion control needed.",
+    "groomingNeeds": "High. Long coat. Regular brushing, baths, and ear cleaning.",
+    "size": "Medium (20–30 lbs)",
+    "careRating": "4/5"
+  },
+  {
+    "breed": "Dogo Argentino",
+    "origin": "Argentina",
+    "feedingHabits": "High-protein, high-fat. Larger portions for energy maintenance.",
+    "groomingNeeds": "Low. Short coat. Minimal brushing, regular baths.",
+    "size": "Large (80–100 lbs)",
+    "careRating": "3/5"
+  },
+  {
+    "breed": "Great Dane",
+    "origin": "Germany",
+    "feedingHabits": "High-protein. Multiple smaller meals daily with portion control.",
+    "groomingNeeds": "Low. Minimal brushing, regular cleaning due to size.",
+    "size": "Giant (110–175 lbs)",
+    "careRating": "4/5"
+  },
+  {
+    "breed": "Dalmatian",
+    "origin": "Croatia",
+    "feedingHabits": "Balanced diet, low purine. Moderate protein and fat.",
+    "groomingNeeds": "Low. Weekly brushing to manage shedding.",
+    "size": "Medium (45–70 lbs)",
+    "careRating": "4/5"
+  },
+  {
+    "breed": "Doberman Pinscher",
+    "origin": "Germany",
+    "feedingHabits": "High-protein, high-fat. Quality food to support activity.",
+    "groomingNeeds": "Low. Short coat. Occasional brushing and regular baths.",
+    "size": "Medium–Large (60–100 lbs)",
+    "careRating": "5/5"
+  },
+  {
+    "breed": "German Shepherd",
+    "origin": "Germany",
+    "feedingHabits": "High-protein, balanced diet. Feed twice daily.",
+    "groomingNeeds": "Moderate. Weekly brushing. Heavy seasonal shedding.",
+    "size": "Large (50–90 lbs)",
+    "careRating": "5/5"
+  },
+  {
+    "breed": "Golden Retriever",
+    "origin": "Scotland",
+    "feedingHabits": "High-protein. Monitor weight to prevent obesity.",
+    "groomingNeeds": "Moderate. Regular brushing to reduce shedding and matting.",
+    "size": "Medium–Large (55–75 lbs)",
+    "careRating": "5/5"
+  },
+  {
+    "breed": "Great Pyrenees",
+    "origin": "France",
+    "feedingHabits": "High-protein to support large size. Meets energy and maintenance needs.",
+    "groomingNeeds": "High. Weekly brushing for heavy shedding and tangling.",
+    "size": "Giant (85–115 lbs)",
+    "careRating": "3/5"
+  },
+  {
+    "breed": "Havanese",
+    "origin": "Cuba",
+    "feedingHabits": "Balanced diet with moderate protein and fat. Small, frequent meals.",
+    "groomingNeeds": "High. Daily brushing to prevent tangles and mats.",
+    "size": "Small",
+    "careRating": "4/5"
+  },
+  {
+    "breed": "Shih Tzu",
+    "origin": "China",
+    "feeding_habits": "High-quality, balanced diet tailored to small size; smaller, frequent meals.",
+    "grooming_needs": "High - daily brushing, occasional bathing, regular ear and eye care.",
+    "size": "Small (9–16 lbs)",
+    "care_rating": "4/5"
+  },
+  {
+    "breed": "Siberian Husky",
+    "origin": "Siberia",
+    "feeding_habits": "High-protein, high-energy diet; moderate fat content; avoid overfeeding.",
+    "grooming_needs": "High - regular brushing, seasonal heavy shedding, occasional baths.",
+    "size": "Medium (35–60 lbs)",
+    "care_rating": "4/5"
+  },
+  {
+    "breed": "Staffordshire Bull Terrier",
+    "origin": "United Kingdom",
+    "feeding_habits": "High-protein, balanced diet with moderate fat.",
+    "grooming_needs": "Low - occasional brushing.",
+    "size": "Medium (24–38 lbs)",
+    "care_rating": "4/5"
+  },
+  {
+    "breed": "Tibetan Mastiff",
+    "origin": "Tibet",
+    "feeding_habits": "High-protein, calorie-dense diet to support large size.",
+    "grooming_needs": "High - regular brushing, heavy seasonal shedding.",
+    "size": "Giant (70–150 lbs)",
+    "care_rating": "4/5"
+  },
+  {
+    "breed": "Weimaraner",
+    "origin": "Germany",
+    "feeding_habits": "High-protein, low-fat diet to support athletic build.",
+    "grooming_needs": "Low - regular brushing.",
+    "size": "Large (55–90 lbs)",
+    "care_rating": "4/5"
+  },
+  {
+    "breed": "West Highland Terrier (Westie)",
+    "origin": "Scotland",
+    "feeding_habits": "High-protein diet; small meals throughout the day.",
+    "grooming_needs": "Moderate - regular brushing, hand-stripping or clipping.",
+    "size": "Small (15–20 lbs)",
+    "care_rating": "4/5"
+  },
+  {
+    "breed": "Whippet",
+    "origin": "United Kingdom",
+    "feeding_habits": "High-protein diet; balanced with moderate fat content.",
+    "grooming_needs": "Low - occasional brushing.",
+    "size": "Medium (25–40 lbs)",
+    "care_rating": "4/5"
+  },
+  {
+    "breed": "Yorkshire Terrier",
+    "origin": "United Kingdom",
+    "feeding_habits": "High-quality, protein-rich diet in small portions.",
+    "grooming_needs": "High - daily brushing, regular ear and eye care.",
+    "size": "Small (4–7 lbs)",
+    "care_rating": "4/5"
+  },
+  {
+    "breed": "Airedale Terrier",
+    "origin": "United Kingdom",
+    "feeding_habits": "High-protein, balanced diet with moderate fat.",
+    "grooming_needs": "Moderate - regular hand-stripping or clipping, weekly brushing.",
+    "size": "Large (40–65 lbs)",
+    "care_rating": "4/5"
+  },
+  {
+    "breed": "Akita",
+    "origin": "Japan",
+    "feeding_habits": "High-protein, nutrient-dense diet; monitor weight.",
+    "grooming_needs": "Moderate - regular brushing, seasonal heavy shedding.",
+    "size": "Large (70–130 lbs)",
+    "care_rating": "4/5"
+  },
+  {
+    "breed": "Alaskan Malamute",
+    "origin": "United States",
+    "feeding_habits": "High-protein, high-calorie diet; supports muscle mass and energy.",
+    "grooming_needs": "High - regular brushing, heavy seasonal shedding.",
+    "size": "Large–Giant (75–100 lbs)",
+    "care_rating": "4/5"
+  },
+  {
+    "breed": "American Bulldog",
+    "origin": "United States",
+    "feeding_habits": "High-protein, balanced diet with moderate fat; two meals a day.",
+    "grooming_needs": "Low - regular brushing.",
+    "size": "Large (60–120 lbs)",
+    "care_rating": "4/5"
+  },
+  {
+    "breed": "American Cocker Spaniel",
+    "origin": "United States",
+    "feeding_habits": "Balanced, high-protein diet; avoid overfeeding.",
+    "grooming_needs": "High - daily brushing, regular ear cleaning and trimming.",
+    "size": "Medium (20–30 lbs)",
+    "care_rating": "4/5"
+  },
+  {
+    "breed": "Bloodhound",
+    "origin": "United States/Belgium",
+    "feedingHabits": "High-protein diet, regular meals with high-quality food.",
+    "groomingNeeds": "Low grooming needs, moderate shedding, regular brushing and ear cleaning.",
+    "size": "Large – 80–110 lbs",
+    "careRating": "4/5"
+  },
+  {
+    "breed": "Border Collie",
+    "origin": "United Kingdom",
+    "feedingHabits": "High-protein, balanced diet, high-quality kibble, twice daily.",
+    "groomingNeeds": "Moderate grooming, heavy shedding, regular brushing.",
+    "size": "Medium – 30–45 lbs",
+    "careRating": "5/5"
+  },
+  {
+    "breed": "Boston Terrier",
+    "origin": "United States",
+    "feedingHabits": "Balanced high-protein diet, small meals with portion control.",
+    "groomingNeeds": "Low grooming needs, minimal shedding, occasional brushing.",
+    "size": "Small – 10–25 lbs",
+    "careRating": "4/5"
+  },
+  {
+    "breed": "Boxer",
+    "origin": "Germany",
+    "feedingHabits": "High-protein, balanced diet, portion-controlled twice daily.",
+    "groomingNeeds": "Low grooming needs, minimal shedding, regular brushing.",
+    "size": "Medium–Large – 50–80 lbs",
+    "careRating": "4/5"
+  },
+  {
+    "breed": "Bulldog",
+    "origin": "United Kingdom",
+    "feedingHabits": "Balanced high-protein diet, strict portion control.",
+    "groomingNeeds": "Low grooming needs, minimal shedding, clean skin folds and ears.",
+    "size": "Medium – 40–50 lbs",
+    "careRating": "3/5"
+  },
+  {
+    "breed": "Cairn Terrier",
+    "origin": "Scotland",
+    "feedingHabits": "Balanced high-protein diet, portion-controlled twice daily.",
+    "groomingNeeds": "Moderate grooming, regular brushing, occasional hand-stripping.",
+    "size": "Small – 13–18 lbs",
+    "careRating": "3/5"
+  },
+  {
+    "breed": "Cavalier King Charles Spaniel",
+    "origin": "United Kingdom",
+    "feedingHabits": "Balanced high-protein diet, high-quality kibble, avoid overfeeding.",
+    "groomingNeeds": "Moderate grooming, regular brushing, ear cleaning and trimming.",
+    "size": "Small – 13–18 lbs",
+    "careRating": "4/5"
+  },
+  {
+    "breed": "Chihuahua",
+    "origin": "Mexico",
+    "feedingHabits": "High-protein, nutrient-dense diet, small portions.",
+    "groomingNeeds": "Low grooming needs (short-haired); more for long-haired.",
+    "size": "Tiny – 2–6 lbs",
+    "careRating": "4/5"
+  },
+  {
+    "breed": "Chinese Crested",
+    "origin": "China",
+    "feedingHabits": "Balanced high-protein diet, regular meals with portion control.",
+    "groomingNeeds": "High grooming needs; skin care for hairless, brushing for powderpuff.",
+    "size": "Small – 5–12 lbs",
+    "careRating": "4/5"
+  },
+  {
+    "breed": "Chinese Shar-Pei",
+    "origin": "China",
+    "feedingHabits": "High-quality, protein-rich diet; may need limited-ingredient food.",
+    "groomingNeeds": "Moderate grooming, regular cleaning of skin folds.",
+    "size": "Medium – 40–65 lbs",
+    "careRating": "3/5"
+  },
+  {
+    "breed": "Chow Chow",
+    "origin": "China",
+    "feedingHabits": "Balanced diet with moderate protein and fat; portion control needed.",
+    "groomingNeeds": "High grooming needs, thick coat needs frequent brushing.",
+    "size": "Medium–Large – 45–70 lbs",
+    "careRating": "3/5"
+  },
+  {
+    "breed": "Clumber Spaniel",
+    "origin": "United Kingdom",
+    "feedingHabits": "High-quality diet, calorie control to prevent obesity.",
+    "groomingNeeds": "High grooming needs, regular brushing and ear cleaning.",
+    "size": "Large – 55–85 lbs",
+    "careRating": "3/5"
+  },
+  {
+    "breed": "Cocker Spaniel (American)",
+    "origin": "United States",
+    "feedingHabits": "Balanced diet with controlled fat, supports immune and skin health.",
+    "groomingNeeds": "High grooming needs, regular brushing, ears cleaned often.",
+    "size": "Small–Medium – 20–30 lbs",
+    "careRating": "4/5"
+  },
+  {
+    "breed": "Cocker Spaniel (English)",
+    "origin": "England",
+    "feedingHabits": "High-quality, protein and omega-rich diet with portion control.",
+    "groomingNeeds": "High grooming needs, regular brushing, professional trimming, clean ears.",
+    "size": "Medium",
+    "careRating": "4/5"
+  },
+  {
+    "breed": "English Foxhound",
+    "origin": "England",
+    "feeding_habits": "Active dogs need high-protein food. May eat quickly, so slow feeders are useful.",
+    "grooming_needs": "Low. Short coat requires only weekly brushing.",
+    "size": "Large – 60–75 lbs.",
+    "care_rating": "3/5 – Energetic, social, and independent. Needs space to roam or regular runs. Best in rural settings."
+  },
+  {
+    "breed": "English Setter",
+    "origin": "England",
+    "feeding_habits": "Needs quality food with joint support and controlled portions to avoid obesity.",
+    "grooming_needs": "Moderate to high. Feathered coat requires brushing several times a week.",
+    "size": "Medium–Large – 45–80 lbs.",
+    "care_rating": "4/5 – Sweet-natured and friendly. Requires both physical activity and social time. Adaptable and elegant."
+  },
+  {
+    "breed": "English Shepherd",
+    "origin": "United States",
+    "feeding_habits": "Moderate to high-calorie diet needed for active individuals. High-protein food supports working lines.",
+    "grooming_needs": "Moderate. Brushing a few times per week helps control shedding.",
+    "size": "Medium – 40–60 lbs.",
+    "care_rating": "4/5 – Hardworking, loyal, and intelligent. Excellent for farms or homes that can provide structure and purpose."
+  },
+  {
+    "breed": "English Springer Spaniel",
+    "origin": "England",
+    "feeding_habits": "Needs quality dog food rich in protein and omega-3s to support coat and energy levels.",
+    "grooming_needs": "High. Regular brushing and occasional trimming, especially around ears and legs.",
+    "size": "Medium – 40–50 lbs.",
+    "care_rating": "4/5 – Happy, alert, and eager to please. Thrives with attention, daily activity, and socialization."
+  },
+  {
+    "breed": "English Toy Spaniel (King Charles Spaniel)",
+    "origin": "England",
+    "feeding_habits": "Small breed kibble with added dental support. Prone to weight gain if overfed.",
+    "grooming_needs": "Moderate. Long, soft coat requires brushing a few times weekly and cleaning of ears and eyes.",
+    "size": "Small – 8–14 lbs.",
+    "care_rating": "3/5 – Calm and affectionate. Best for quiet households. Sensitive and may be reserved around strangers."
+  },
+  {
+    "breed": "Entlebucher Mountain Dog",
+    "origin": "Switzerland",
+    "feeding_habits": "Needs a protein-rich diet to support muscle development and energy needs.",
+    "grooming_needs": "Low. Short, dense coat needs brushing weekly to manage shedding.",
+    "size": "Medium–Large – 45–65 lbs.",
+    "care_rating": "4/5 – Energetic, loyal, and protective. Needs active lifestyle and experienced handlers."
+  },
+  {
+    "breed": "Estrela Mountain Dog",
+    "origin": "Portugal",
+    "feeding_habits": "Needs large-breed food with support for joints. Feed controlled portions to avoid obesity.",
+    "grooming_needs": "Moderate. Thick coat needs brushing a few times weekly, more during shedding seasons.",
+    "size": "Large–Giant – 75–130 lbs.",
+    "care_rating": "3/5 – Independent and protective. Best in rural homes with space and strong leadership."
+  },
+  {
+    "breed": "Eurasier",
+    "origin": "Germany",
+    "feeding_habits": "Moderate diet with attention to weight management. Sensitive stomachs are possible.",
+    "grooming_needs": "Moderate to high. Thick double coat needs brushing several times a week.",
+    "size": "Medium–Large – 40–70 lbs.",
+    "care_rating": "4/5 – Calm, reserved, and family-oriented. Needs socialization and steady routines."
+  },
+  {
+    "breed": "Field Spaniel",
+    "origin": "England",
+    "feeding_habits": "Active breed requiring high-quality food. Monitor for weight gain with treats.",
+    "grooming_needs": "Moderate. Needs regular brushing and trimming of feathering.",
+    "size": "Medium – 35–50 lbs.",
+    "care_rating": "4/5 – Gentle, intelligent, and adaptable. Great companion but needs consistent exercise and mental enrichment."
+  },
+  {
+    "breed": "Finnish Lapphund",
+    "origin": "Finland",
+    "feeding_habits": "Active breed—needs protein-rich food with joint support; split meals to avoid bloating.",
+    "grooming_needs": "High. Thick double coat needs brushing several times a week, especially in shedding season.",
+    "size": "Medium – 33–53 lbs.",
+    "care_rating": "4/5 – Friendly, intelligent, and energetic. Needs both mental stimulation and physical activity. Adapts well to cold climates."
+  },
+  {
+    "breed": "Finnish Spitz",
+    "origin": "Finland",
+    "feeding_habits": "Light eaters. Requires high-quality kibble with healthy fats to maintain energy.",
+    "grooming_needs": "Moderate. Dense coat needs weekly brushing; heavier during seasonal shedding.",
+    "size": "Small–Medium – 20–33 lbs.",
+    "care_rating": "3/5 – Alert, vocal, and independent. Needs patience in training but very loyal to families."
+  },
+  {
+    "breed": "Flat-Coated Retriever",
+    "origin": "United Kingdom",
+    "feeding_habits": "Active dog requiring a balanced, high-protein diet. Prone to overfeeding.",
+    "grooming_needs": "Moderate. Glossy coat requires brushing a few times a week.",
+    "size": "Large – 60–80 lbs.",
+    "care_rating": "4/5 – Playful, sociable, and good with kids. Retains puppy-like behavior into adulthood."
+  },
+  {
+    "breed": "French Bulldog",
+    "origin": "France",
+    "feeding_habits": "Prone to obesity—needs portion-controlled meals with sensitive digestion formulas.",
+    "grooming_needs": "Low. Short coat is easy to maintain, but facial wrinkles need frequent cleaning.",
+    "size": "Small – 16–28 lbs.",
+    "care_rating": "3/5 – Affectionate and easygoing. Doesn’t require much exercise but can have breathing issues."
+  },
+  {
+    "breed": "German Longhaired Pointer",
+    "origin": "Germany",
+    "feeding_habits": "Needs high-protein, high-energy food, especially for working dogs.",
+    "grooming_needs": "Moderate. Long coat needs brushing 2–3 times a week and trimming.",
+    "size": "Large – 55–75 lbs.",
+    "care_rating": "4/5 – Smart, hardworking, and versatile. Thrives with active owners who enjoy outdoor activities."
+  },
+  {
+    "breed": "German Pinscher",
+    "origin": "Germany",
+    "feeding_habits": "Needs quality kibble rich in protein and healthy fats. Split meals to avoid energy crashes.",
+    "grooming_needs": "Low. Short coat requires minimal brushing.",
+    "size": "Medium – 25–45 lbs.",
+    "care_rating": "4/5 – Loyal, energetic, and alert. Needs structured training and an engaged owner."
+  },
+  {
+    "breed": "German Shepherd",
+    "origin": "Germany",
+    "feeding_habits": "Large-breed diet rich in protein and joint supplements. Multiple small meals preferred.",
+    "grooming_needs": "Moderate to high. Sheds heavily—needs frequent brushing.",
+    "size": "Large – 50–90 lbs.",
+    "care_rating": "5/5 – Highly intelligent, trainable, and versatile. Needs mental challenges and consistent exercise."
+  },
+  {
+    "breed": "German Shorthaired Pointer",
+    "origin": "Germany",
+    "feeding_habits": "High energy needs—requires nutrient-dense food with lean proteins.",
+    "grooming_needs": "Low. Short coat only needs occasional brushing.",
+    "size": "Medium–Large – 45–70 lbs.",
+    "care_rating": "4/5 – Friendly, athletic, and eager to please. Needs a lot of activity to prevent boredom."
+  },
+  {
+    "breed": "German Spitz (Mittel)",
+    "origin": "Germany",
+    "feeding_habits": "Balanced diet with attention to dental health. Avoid overfeeding.",
+    "grooming_needs": "Moderate. Thick double coat needs brushing several times a week.",
+    "size": "Small–Medium – 23–26 lbs.",
+    "care_rating": "3/5 – Lively, intelligent, and alert. Good for experienced owners who enjoy active pets."
+  },
+  {
+    "breed": "Giant Schnauzer",
+    "origin": "Germany",
+    "feeding_habits": "Needs a high-protein, high-energy diet with glucosamine for joint health.",
+    "grooming_needs": "High. Needs regular clipping and brushing; beard and eyebrows require special care.",
+    "size": "Large–Giant – 60–110 lbs.",
+    "care_rating": "4/5 – Bold, protective, and highly trainable. Thrives in working or structured homes."
+  }
+]
+
+
+
