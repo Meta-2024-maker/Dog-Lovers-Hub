@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dog Breed Quiz</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 600px; margin: auto; padding: 20px; }
+    label { display: block; margin: 10px 0 5px; }
+    button { margin-top: 15px; padding: 8px 12px; }
+    .result { margin-top: 20px; }
+  </style>
+</head>
+<body>
+
+  <h1>Find Your Ideal Dog Breed</h1>
+
+  <form id="quizForm">
+    <label for="houseSpace">What is your house space like?</label>
+    <select id="houseSpace" required>
+      <option value="">-- Select --</option>
+      <option value="small">Small (Apartment/Flat)</option>
+      <option value="medium">Medium (Townhouse)</option>
+      <option value="large">Large (House with Yard)</option>
+    </select>
+
+    <label for="lifestyle">What is your lifestyle?</label>
+    <select id="lifestyle" required>
+      <option value="">-- Select --</option>
+      <option value="active">Active (Exercise daily, outdoors)</option>
+      <option value="moderate">Moderate (Some exercise, mixed indoors/outdoors)</option>
+      <option value="calm">Calm (Mostly indoors, less active)</option>
+    </select>
+
+    <button type="submit">Find Dog Breeds</button>
+  </form>
+
+  <div class="result" id="result"></div>
+
+  <script>
+    async function loadDogData() {
+      const response = await fetch('dog.json');
+      return response.json();
+    }
+
+    function filterBreeds(dogs, houseSpace, lifestyle) {
+      // Example filters assuming dog.json has fields like:
+      // "houseSpace": "small" | "medium" | "large"
+      // "lifestyle": "active" | "moderate" | "calm"
+      return dogs.filter(dog => {
+        const matchesHouse = dog.houseSpace === houseSpace || dog.houseSpace === 'any';
+        const matchesLifestyle = dog.lifestyle.includes(lifestyle) || dog.lifestyle.includes('any');
+        return matchesHouse && matchesLifestyle;
+      });
+    }
+
+    document.getElementById('quizForm').addEventListener('submit', async function(e) {
+      e.preventDefault();
+
+      const houseSpace = document.getElementById('houseSpace').value;
+      const lifestyle = document.getElementById('lifestyle').value;
+      const resultDiv = document.getElementById('result');
+      resultDiv.textContent = 'Loading...';
+
+      try {
+        const dogs = await loadDogData();
+        const matchedBreeds = filterBreeds(dogs, houseSpace, lifestyle);
+
+        if (matchedBreeds.length === 0) {
+          resultDiv.textContent = 'No dog breeds found matching your criteria.';
+          return;
+        }
+
+        // Display results
+        let html = '<h2>Recommended Dog Breeds:</h2><ul>';
+        matchedBreeds.forEach(dog => {
+          html += `<li><strong>${dog.breed}</strong>: ${dog.description || 'No description available'}</li>`;
+        });
+        html += '</ul>';
+        resultDiv.innerHTML = html;
+
+      } catch (error) {
+        resultDiv.textContent = 'Error loading dog data.';
+        console.error(error);
+      }
+    });
+  </script>
+
+</body>
+</html>
